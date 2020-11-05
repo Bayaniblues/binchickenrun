@@ -23,7 +23,9 @@ let isAlive = setInterval(() => {
     // detect collision
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 100) {
         // collision
-        alert("DEPORTED")
+        if(!alert('DEPORTED!')){window.location.reload();}
+
+        //alert("DEPORTED")
     }
 
 }, 10);
