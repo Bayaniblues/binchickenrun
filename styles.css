@@ -1,0 +1,61 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#dino {
+    width: 100px;
+    height: 100px;
+    background-image: url(img/binchicken.jpg);
+    background-size: 100px 100px;
+    position: relative;
+    top:100px;
+
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 100px;
+    }
+    30% {
+        top: 60px;
+    }
+    50% {
+        top: 30px;
+    }
+    80% {
+        top: 60px;
+    }
+    100% {
+        top: 100px;
+    }
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 60px;
+    left: 580px;
+
+    background-image: url("img/girl.png");
+    background-size: 20px 40px ;
+
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left:580px;
+    }
+    100% {
+        left:-20px;
+    }
+}
+
